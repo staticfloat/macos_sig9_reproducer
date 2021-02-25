@@ -17,6 +17,8 @@ run: main original/child.dylib clone/child.dylib
 	cp original/child.dylib child.dylib
 	@echo "First run:"
 	./main
+	@# Uncomment the following line to work around the problem
+	#rm child.dylib
 	cp clone/child.dylib child.dylib
 	@echo "Second run:"
 	./main
